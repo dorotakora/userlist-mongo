@@ -1,16 +1,20 @@
 {
+  "homepage": "https://dorotakora.github.io/userlist-mongo/",
   "name": "nodetest2",
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "node ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "^4.16.4",
+    "gh-pages": "^2.0.1",
     "http-errors": "~1.6.3",
-    "jade": "~1.11.0",
+    "jade": "^1.11.0",
     "jade-bootstrap": "^1.0.14",
     "mongodb": "^3.2.7",
     "monk": "^6.0.6",
